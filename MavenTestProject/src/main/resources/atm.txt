@@ -1,0 +1,4 @@
+verify that user not get blocked after  2 continuous enter and 1 enter after an hours with wrong password
+verify that user not get blocked with 1 time correct password and 2 time wrong password at continuosly
+verify that user not get blocked with 2 time correct password and 1 time wrong password at continuosly
+ververify that user not get blocked with 3 time correct password and 1 time wrong password at continuosly
