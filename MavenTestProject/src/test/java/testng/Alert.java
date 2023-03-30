@@ -30,6 +30,7 @@ public class Alert extends DriverManager {
 		DriverManager d = new DriverManager();
 		driver = d.launchBrowser("chrome",expectedUrl);
 		ob = new DropdownPageElements(driver);
+	System.out.println("ss");
 
 	}
 
