@@ -30,7 +30,8 @@ public class popup {
       		
       while(i1.hasNext())			
       {		
-          String ChildWindow=i1.next();		
+          String ChildWindow=i1.next();	
+System.out.println("hiii");	
           		
           if(!MainWindow.equalsIgnoreCase(ChildWindow))			
           {    		
