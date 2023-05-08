@@ -1,0 +1,30 @@
+public void f() {
+	  String urlActual = driver.getCurrentUrl();
+	  ////////////////////////HardrAssert
+//	  Assert.assertEquals(urlActual, urlExpected);
+//	  System.out.println("Passed");
+	  
+	  ///////////////////////////////////////SoftAssert
+//	  SoftAssert obj = new SoftAssert();
+//	  obj.assertEquals(urlActual, "1213");
+//	  System.out.println("
+@Test
+  public void g() throws InterruptedException{
+	WebElement inputform = driver.findElement(By.xpath("//*[@id='collapsibleNavbar']/ul/li[2]/a"));
+	inputform.click();
+	WebElement enterMessage = driver.findElement(By.id("single-input-field"));
+	enterMessage.sendKeys("Hello");
+	WebElement button = driver.findElement(By.id("button-one"));
+	button.click();
+	WebElement message = driver.findElement(By.id("message-one"));
+	Thread.sleep(2000);
+	String outMessage= message.getText();
+	 if(outMessage.contains("Hello"))
+	   {
+	   Assert.assertTrue(true);
+	   }
+	   else
+	   {
+	   Assert.fail("This is failed due to url mismatch");
+	   }
+  }
