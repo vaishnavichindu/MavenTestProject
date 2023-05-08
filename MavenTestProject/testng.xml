@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="1" name="Test">
     <classes>
-      <class name="testng.fileupload"/>
+      <class name="testng.fileupload">
+      
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
